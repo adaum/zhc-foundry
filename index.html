@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZHC Foundry — Agentic Venture Studio & Autonomous Systems</title>
+  <meta name="description" content="Forging resilient, agentic software, direct commerce engines, and sovereign media assets from raw code to automated distribution." />
+  
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            foundry: {
+              950: '#070a10',
+              900: '#0b0f17',
+              850: '#101623',
+              800: '#151d2f',
+              700: '#1e293b',
+              600: '#334155',
+              400: '#94a3b8',
+              accent: '#10b981', // Emerald terminal
+              amber: '#f59e0b',  // Forged brass / amber
+              cyan: '#06b6d4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Subtle background grid pattern representing industrial blueprint foundations */
+    .blueprint-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+    
+    .glow-radial {
+      background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.09) 0%, rgba(11, 15, 23, 0) 70%);
+    }
+
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f17;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+
+<body class="bg-foundry-900 text-slate-200 font-sans antialiased min-h-screen blueprint-grid selection:bg-emerald-500/20 selection:text-emerald-300">
+
+  <!-- Top Ambient Glow -->
+  <div class="fixed top-0 left-0 right-0 h-96 glow-radial pointer-events-none -z-10"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-foundry-900/80 border-b border-foundry-700/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo / Masthead -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-8 h-8 rounded-lg bg-foundry-800 border border-foundry-700/80 flex items-center justify-center font-mono text-xs font-semibold text-emerald-400 group-hover:border-emerald-500/50 transition">
+          ZF
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold tracking-tight text-white text-base">ZHC FOUNDRY</span>
+          <span class="text-[10px] font-mono text-foundry-400 -mt-1 tracking-wider uppercase">Agentic Venture Foundry</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#philosophy" class="hover:text-emerald-400 transition">Philosophy</a>
+        <a href="#verticals" class="hover:text-emerald-400 transition">Portfolio Verticals</a>
+        <a href="#architecture" class="hover:text-emerald-400 transition">Architecture</a>
+        <a href="#specs" class="hover:text-emerald-400 transition">Spec Sheet</a>
+      </nav>
+
+      <!-- Operational Status Pill & Header Contact Button -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="hidden sm:inline">AGENTIC MESH:</span> ONLINE
+        </div>
+        <a href="#dispatch" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white bg-foundry-800 hover:bg-foundry-700 border border-foundry-600/50 rounded-lg transition">
+          Contact Desk
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- Top Tagline Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-foundry-800 border border-foundry-700 text-xs font-mono text-slate-300 mb-8 shadow-sm">
+        <span class="text-amber-400 font-semibold">[AGENTIC PIPELINES]</span>
+        <span>Deterministic Code & Sovereign Execution</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+        Autonomous <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+          Venture Foundry
+        </span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-3xl mx-auto text-base sm:text-xl text-slate-400 leading-relaxed font-normal mb-10">
+        Forging resilient, zero-human software, direct commerce engines, and sovereign media assets. Autonomous business models driven by agentic multi-tool pipelines and zero-latency headless infrastructure.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm font-medium">
+        <a href="#verticals" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-foundry-950 font-semibold shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-2">
+          <span>Explore Operating Verticals</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <a href="#dispatch" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-foundry-800 hover:bg-foundry-700/80 text-slate-200 border border-foundry-700 transition flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span>Dispatch Terminal</span>
+        </a>
+      </div>
+
+      <!-- Key Metadata Ribbon -->
+      <div class="mt-16 pt-8 border-t border-foundry-800 grid grid-cols-2 sm:grid-cols-4 gap-6 text-left">
+        <div>
+          <span class="block text-xs font-mono uppercase text-foundry-400">Parent Entity</span>
+          <span class="text-sm font-semibold text-slate-200">ZHC Foundry LLC</span>
+        </div>
+        <div>
+          <span class="block text-xs font-mono uppercase text-foundry-400">Headquarters</span>
+          <span class="text-sm font-semibold text-slate-200">East Texas Forge</span>
+        </div>
+        <div>
+          <span class="block text-xs font-mono uppercase text-foundry-400">Logistics Alignment</span>
+          <span class="text-sm font-semibold text-slate-200">Bengaluru IN Hub</span>
+        </div>
+        <div>
+          <span class="block text-xs font-mono uppercase text-foundry-400">Execution Topology</span>
+          <span class="text-sm font-semibold text-emerald-400">Agentic & Sovereign</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== THREE FOUNDRY PILLARS ==================== -->
+  <section id="philosophy" class="py-20 bg-foundry-850/60 border-y border-foundry-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-mono uppercase text-emerald-400 tracking-wider mb-2">Operational Foundation</h2>
+        <h3 class="text-3xl font-bold tracking-tight text-white">Engineered for Permanence</h3>
+        <p class="text-slate-400 text-sm mt-3">From static automations to context-aware agency: systems that observe, route, and execute without human latency.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-emerald-500/40 transition duration-300 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-foundry-800 border border-foundry-700 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Headless Architecture</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              No bloated monolithic CMS platforms or vulnerable plugin stacks. Pure static Next.js frontends, instant worldwide CDN edge caching, and atomic serverless API endpoints running sub-100ms.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Stack: Next.js · Vercel Edge · Zero DB Locks
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-amber-500/40 transition duration-300 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-foundry-800 border border-foundry-700 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Deterministic Attribution</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Third-party cookies die on mobile. We use in-memory serverless PDF stamping to hard-code affiliate referral IDs directly into distributed assets, preserving viral WhatsApp attribution forever.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Engine: Dynamic pdf-lib · In-Memory Fusion
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-cyan-500/40 transition duration-300 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-foundry-800 border border-foundry-700 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Agentic Autonomy</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Beyond simple triggers. Our systems deploy context-grounded agentic workflows: semantic query routing, autonomous tool calling, and automated dispatch triage that manage operational pipelines end-to-end.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Ops: Agentic Workflows · Zero-Operator Relays
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== AIR-GAPPED PORTFOLIO VERTICALS ==================== -->
+  <section id="verticals" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 tracking-wider">Industrial Taxonomy</span>
+        <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Active Operating Verticals</h2>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">Self-contained business units engineered, cast, and maintained under the ZHC sovereign architecture framework.</p>
+      </div>
+      <div class="mt-4 md:mt-0 font-mono text-xs text-slate-400 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 4 OF 4 VERTICALS ONLINE
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Vertical 01: South Asian Domestic Botanical Logistics -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
+              VERTICAL 01
+            </span>
+            <span class="text-xs font-mono text-slate-500">Bangalore Hub Relay</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-2">South Asian Domestic Botanical Logistics</h3>
+          <p class="text-xs font-mono text-amber-400/90 mb-4">Direct Supply Chain Routing & Wholesale Buying Club Architecture</p>
+          
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            High-authority direct-to-warehouse dispatch protocol in the Indian subcontinent. Bypasses multi-tiered retail markups and adulteration risks by routing consumers directly to central climate-controlled headquarters and fulfillment hubs in Bengaluru.
+          </p>
+
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Domestic INR GST billing & express regional logistics integration</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Frictionless wholesale buying club enrollment (Zero multi-level recruiting stigma)</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Hardware-backed automated inbound mobile routing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Status: Active Production</span>
+          <span class="text-emerald-400">Autonomous Relay</span>
+        </div>
+      </div>
+
+      <!-- Vertical 02: Dynamic Edge Attribution & Document Stamping -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-amber-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono">
+              VERTICAL 02
+            </span>
+            <span class="text-xs font-mono text-slate-500">In-Memory Engine</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-2">Dynamic Edge Attribution & Document Stamping</h3>
+          <p class="text-xs font-mono text-emerald-400/90 mb-4">Zero-Human Offline-Resilient Link Fusion</p>
+          
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Proprietary serverless document compiler modifying PDF binary link annotations and visual text on demand. Guarantees commercial attribution survives cross-device transfers, sandboxed PDF viewers, and forwarded private messaging threads.
+          </p>
+
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Sub-150ms in-memory PDF manipulation using headless JavaScript engines</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Immune to Safari ITP, mobile webview purges, and ad blockers</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Direct URL handoff directly to enterprise cart destinations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Stack: pdf-lib · Vercel Edge</span>
+          <span class="text-amber-400">Operational Toolchain</span>
+        </div>
+      </div>
+
+      <!-- Vertical 03: Industrial Equipment & Heavy Machinery Lead Relays -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-cyan-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono">
+              VERTICAL 03
+            </span>
+            <span class="text-xs font-mono text-slate-500">Autonomous Procurement</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-2">Industrial Equipment & Heavy Machinery Lead Relays</h3>
+          <p class="text-xs font-mono text-cyan-400/90 mb-4">Algorithmic Parts Discovery & Supplier Matching</p>
+          
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Headless lead-matching infrastructure capturing high-intent commercial procurement queries. Connects enterprise equipment inquiries directly with regional equipment yards and salvage distribution networks without human middlemen.
+          </p>
+
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Programmatic static index deployment for long-tail industrial search</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Automated buyer RFQ sanitization and vendor relay</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Zero-human transaction verification loops</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Deployment: Multi-Node Edge</span>
+          <span class="text-cyan-400">Autonomous Match</span>
+        </div>
+      </div>
+
+      <!-- Vertical 04: Algorithmic Chemical Editorial & Consumer Adulteration Audits -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
+              VERTICAL 04
+            </span>
+            <span class="text-xs font-mono text-slate-500">Agentic Intelligence</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-2">Agentic Chemical Editorial & Purity Audits</h3>
+          <p class="text-xs font-mono text-emerald-400/90 mb-4">Autonomous GC-MS Spectral Verification & Research Pipelines</p>
+          
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Agentic research desk querying gas chromatography and mass spectrometry databases to expose consumer adulteration, phthalate extensions, and dilution markers. Synthesizes peer-reviewed botanical science into public education without human copywriters.
+          </p>
+
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Agentic cross-referencing of laboratory GC-MS spectral databases</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Automated generation of dilution indices and clinical carrier matrices</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Autonomous editorial syndication to high-authority edge nodes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Topology: Agentic RAG Pipeline</span>
+          <span class="text-slate-300">Audited Syndication</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SYSTEM SPEC SHEET & ARCHITECTURE ==================== -->
+  <section id="architecture" class="py-20 bg-foundry-850/40 border-t border-foundry-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Technical Narrative -->
+        <div class="lg:col-span-5">
+          <span class="text-xs font-mono uppercase text-emerald-400 tracking-wider">The ZHC Manifesto</span>
+          <h2 class="text-3xl font-bold tracking-tight text-white mt-2 mb-6">Agentic Agency. Sovereign Infrastructure.</h2>
+          <div class="space-y-4 text-slate-400 text-sm leading-relaxed">
+            <p>
+              Traditional businesses drown in payroll overhead, SaaS subscription fatigue, and broken manual handoffs. When an organization relies on humans to forward links, copy emails, or follow up manually, revenue breaks at the weakest link.
+            </p>
+            <p>
+              At <strong class="text-slate-200">ZHC Foundry</strong>, every business unit is designed as a sovereign, self-contained machine. We combine deterministic headless code with agentic tool execution—allowing systems to query knowledge stores, stamp attribution into distributed documents, and execute fulfillment handoffs autonomously.
+            </p>
+            <p class="font-mono text-xs text-slate-300 pt-2 border-l-2 border-emerald-500 pl-4">
+              "Attribution must survive the handoff from one human to the next—offline, across devices, and through forwarded family chats."
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Terminal Spec Sheet -->
+        <div id="specs" class="lg:col-span-7">
+          <div class="rounded-2xl bg-foundry-950 border border-foundry-700 shadow-2xl overflow-hidden font-mono text-xs">
+            
+            <!-- Terminal Header -->
+            <div class="px-4 py-3 bg-foundry-900 border-b border-foundry-700/80 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                <span class="text-slate-400 text-[11px] ml-2">zhc-foundry-spec-v2.6.sh</span>
+              </div>
+              <span class="text-emerald-400 text-[10px] tracking-wide">STATUS: RUNNING</span>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="p-6 space-y-4 text-slate-300 overflow-x-auto">
+              
+              <div>
+                <span class="text-emerald-400">$</span> <span class="text-white font-semibold">sysinfo --topology agentic-mesh</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 py-2 border-y border-foundry-800 text-slate-400">
+                <div>CORE_FRAMEWORK: <span class="text-slate-200">Next.js 15+</span></div>
+                <div>EXECUTION_MODE: <span class="text-emerald-400">Agentic Tool Calling</span></div>
+                <div>COST_PROFILE: <span class="text-emerald-400">$0 Server Overhead</span></div>
+              </div>
+
+              <div class="space-y-2 text-slate-400">
+                <div class="flex items-start gap-2">
+                  <span class="text-amber-400 font-bold">»</span>
+                  <div>
+                    <span class="text-slate-200 font-medium">ATTRIBUTION_ENGINE:</span> Dynamic Serverless PDF Stamping (<code class="text-emerald-400 bg-foundry-900 px-1 py-0.5 rounded">pdf-lib</code> in-memory buffer)
+                    <div class="text-[11px] text-slate-500 mt-0.5">Bypasses cookie degradation; Enroller ID stamped permanently into offline assets.</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2">
+                  <span class="text-amber-400 font-bold">»</span>
+                  <div>
+                    <span class="text-slate-200 font-medium">AGENTIC_ROUTER:</span> Context-Grounded Semantic Dispatch
+                    <div class="text-[11px] text-slate-500 mt-0.5">Automated document qualification, query triage, and zero-latency webhook execution.</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2">
+                  <span class="text-amber-400 font-bold">»</span>
+                  <div>
+                    <span class="text-slate-200 font-medium">LOGISTICS_ROUTING:</span> Bengaluru National Hub (Enzyme Citrine, NH 44)
+                    <div class="text-[11px] text-slate-500 mt-0.5">Direct domestic dispatch. INR pricing, standard GST compliance, zero international customs friction.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-2 text-slate-500 flex items-center justify-between text-[11px]">
+                <span>AGENTIC_NODES: 4 VERIFIED ACTIVE</span>
+                <span class="text-emerald-400">100% LATENCY BUDGET PASSED</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OPERATIONAL DISPATCH & CONTACT TERMINAL ==================== -->
+  <section id="dispatch" class="py-24 bg-foundry-900 border-t border-foundry-800 scroll-mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-mono uppercase text-emerald-400 tracking-wider">Direct Desk Gateway</span>
+        <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Operational Dispatch</h2>
+        <p class="text-slate-400 text-sm mt-2">Autonomous and unencumbered. Direct engineering communications for technical inquiries and commercial partnerships.</p>
+      </div>
+
+      <!-- Industrial Terminal Dispatch Card -->
+      <div class="rounded-2xl bg-foundry-950 border border-foundry-700/90 shadow-2xl overflow-hidden font-mono">
+        
+        <!-- Header -->
+        <div class="px-6 py-4 bg-foundry-850 border-b border-foundry-700 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            <span class="text-xs text-slate-300 font-semibold tracking-wide">GATEWAY://OPERATIONAL-ROUTER</span>
+          </div>
+          <span class="text-[11px] text-foundry-400">SECURE DISPATCH</span>
+        </div>
+
+        <!-- Body -->
+        <div class="p-8 space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-slate-400">
+            <div>
+              <span class="block text-slate-500 uppercase tracking-wider mb-1">Architecture</span>
+              <span class="text-slate-200">Zero-Human Engine / Headless Stack</span>
+            </div>
+            <div>
+              <span class="block text-slate-500 uppercase tracking-wider mb-1">Foundry Coordinate</span>
+              <span class="text-slate-200">East Texas Forge • Bengaluru Supply Relay</span>
+            </div>
+            <div>
+              <span class="block text-slate-500 uppercase tracking-wider mb-1">PGP & Direct Channel</span>
+              <span class="text-slate-200">Encrypted Email Transport</span>
+            </div>
+            <div>
+              <span class="block text-slate-500 uppercase tracking-wider mb-1">Response Latency</span>
+              <span class="text-emerald-400">Direct Founder Queue</span>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-foundry-800">
+            <p class="text-xs text-slate-400 mb-4 leading-relaxed font-sans">
+              We do not staff sales representatives or maintain client retainer queues. For institutional inquiries, logistics partnerships, or technical briefings, initiate a direct dispatch to our desk:
+            </p>
+
+            <a href="mailto:andrew@zhcfoundry.com?subject=ZHC%20Foundry%20—%20Operational%20Inquiry" class="inline-flex items-center justify-between w-full sm:w-auto px-6 py-4 rounded-xl bg-foundry-850 hover:bg-foundry-800 border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 transition group shadow-lg">
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 group-hover:scale-110 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <div class="text-left font-mono">
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-300 transition">andrew@zhcfoundry.com</div>
+                  <div class="text-[11px] text-slate-400">Subject: ZHC Foundry — Operational Inquiry</div>
+                </div>
+              </div>
+              <span class="text-xs font-mono text-emerald-400 ml-6 group-hover:translate-x-1 transition hidden sm:inline">&rarr; Launch Client</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Footer Bar -->
+        <div class="px-6 py-3 bg-foundry-900 border-t border-foundry-800 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+          <span>IDENTITY: AIR-GAPPED HOLDING</span>
+          <span class="text-emerald-400">AGENTIC QUEUE READY</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-foundry-950 border-t border-foundry-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <!-- Logo & Copyright -->
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-6 rounded bg-foundry-850 border border-foundry-700 flex items-center justify-center font-mono text-[10px] text-emerald-400 font-bold">
+          ZF
+        </div>
+        <p class="text-xs text-slate-500 font-mono">
+          &copy; 2026 ZHC Foundry LLC. Agentic Systems & Autonomous Ventures.
+        </p>
+      </div>
+
+      <!-- Links & Contact -->
+      <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
+        <a href="#philosophy" class="hover:text-emerald-400 transition">Philosophy</a>
+        <a href="#verticals" class="hover:text-emerald-400 transition">Verticals</a>
+        <a href="#dispatch" class="hover:text-emerald-400 transition">andrew@zhcfoundry.com</a>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-500">East Texas &bull; Bengaluru Relay</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
