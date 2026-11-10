@@ -30,8 +30,8 @@
               700: '#1e293b',
               600: '#334155',
               400: '#94a3b8',
-              accent: '#10b981', // Emerald terminal
-              amber: '#f59e0b',  // Forged brass / amber
+              accent: '#10b981',
+              amber: '#f59e0b',
               cyan: '#06b6d4',
             }
           }
@@ -41,7 +41,6 @@
   </script>
 
   <style>
-    /* Subtle background grid pattern representing industrial blueprint foundations */
     .blueprint-grid {
       background-size: 40px 40px;
       background-image: 
@@ -53,7 +52,6 @@
       background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.09) 0%, rgba(11, 15, 23, 0) 70%);
     }
 
-    /* Custom subtle scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
     }
@@ -75,11 +73,9 @@
   <!-- Top Ambient Glow -->
   <div class="fixed top-0 left-0 right-0 h-96 glow-radial pointer-events-none -z-10"></div>
 
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-foundry-900/80 border-b border-foundry-700/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      
-      <!-- Brand Logo / Masthead -->
       <a href="#" class="flex items-center gap-3 group">
         <div class="w-8 h-8 rounded-lg bg-foundry-800 border border-foundry-700/80 flex items-center justify-center font-mono text-xs font-semibold text-emerald-400 group-hover:border-emerald-500/50 transition">
           ZF
@@ -90,7 +86,6 @@
         </div>
       </a>
 
-      <!-- Desktop Links -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
         <a href="#philosophy" class="hover:text-emerald-400 transition">Philosophy</a>
         <a href="#verticals" class="hover:text-emerald-400 transition">Portfolio Verticals</a>
@@ -98,7 +93,6 @@
         <a href="#specs" class="hover:text-emerald-400 transition">Spec Sheet</a>
       </nav>
 
-      <!-- Operational Status Pill & Header Contact Button -->
       <div class="flex items-center gap-4">
         <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-400">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -111,18 +105,14 @@
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION ==================== -->
+  <!-- Hero Section -->
   <section class="relative pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      
-      <!-- Top Tagline Badge -->
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-foundry-800 border border-foundry-700 text-xs font-mono text-slate-300 mb-8 shadow-sm">
         <span class="text-amber-400 font-semibold">[AGENTIC PIPELINES]</span>
         <span>Deterministic Code & Sovereign Execution</span>
       </div>
 
-      <!-- Main Heading -->
-     <!-- Main Heading -->
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
         Autonomous <br class="hidden sm:inline" />
         <span class="inline-block text-emerald-400">
@@ -130,12 +120,10 @@
         </span>
       </h1>
 
-      <!-- Subtitle -->
       <p class="max-w-3xl mx-auto text-base sm:text-xl text-slate-400 leading-relaxed font-normal mb-10">
         Forging resilient, zero-human software, direct commerce engines, and sovereign media assets. Autonomous business models driven by agentic multi-tool pipelines and zero-latency headless infrastructure.
       </p>
 
-      <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm font-medium">
         <a href="#verticals" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-foundry-950 font-semibold shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-2">
           <span>Explore Operating Verticals</span>
@@ -147,7 +135,6 @@
         </a>
       </div>
 
-      <!-- Key Metadata Ribbon -->
       <div class="mt-16 pt-8 border-t border-foundry-800 grid grid-cols-2 sm:grid-cols-4 gap-6 text-left">
         <div>
           <span class="block text-xs font-mono uppercase text-foundry-400">Parent Entity</span>
@@ -166,14 +153,12 @@
           <span class="text-sm font-semibold text-emerald-400">Agentic & Sovereign</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== THREE FOUNDRY PILLARS ==================== -->
+  <!-- Pillars Section -->
   <section id="philosophy" class="py-20 bg-foundry-850/60 border-y border-foundry-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-xs font-mono uppercase text-emerald-400 tracking-wider mb-2">Operational Foundation</h2>
         <h3 class="text-3xl font-bold tracking-tight text-white">Engineered for Permanence</h3>
@@ -181,7 +166,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
         <!-- Card 1 -->
         <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-emerald-500/40 transition duration-300 relative group flex flex-col justify-between">
           <div>
@@ -190,4 +174,174 @@
             </div>
             <h4 class="text-lg font-semibold text-white mb-3">Headless Architecture</h4>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              No bloated monolithic CMS platforms or vulnerable plugin stacks. Pure static Next.js frontends, instant worldwide
+              No bloated monolithic CMS platforms or vulnerable plugin stacks. Pure static Next.js frontends, instant worldwide CDN edge caching, and atomic serverless API endpoints running sub-100ms.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Stack: Next.js · Vercel Edge · Zero DB Locks
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-amber-500/40 transition duration-300 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-foundry-800 border border-foundry-700 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Deterministic Attribution</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Third-party cookies die on mobile. We use in-memory serverless PDF stamping to hard-code affiliate referral IDs directly into distributed assets, preserving viral WhatsApp attribution forever.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Engine: Dynamic pdf-lib · In-Memory Fusion
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-8 rounded-2xl bg-foundry-900 border border-foundry-700/70 hover:border-cyan-500/40 transition duration-300 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-foundry-800 border border-foundry-700 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Agentic Autonomy</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Beyond simple triggers. Our systems deploy context-grounded agentic workflows: semantic query routing, autonomous tool calling, and automated dispatch triage that manage operational pipelines end-to-end.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-foundry-800 font-mono text-xs text-slate-500">
+            Ops: Agentic Workflows · Zero-Operator Relays
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verticals Section -->
+  <section id="verticals" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 tracking-wider">Industrial Taxonomy</span>
+        <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Active Operating Verticals</h2>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">Self-contained business units engineered, cast, and maintained under the ZHC sovereign architecture framework.</p>
+      </div>
+      <div class="mt-4 md:mt-0 font-mono text-xs text-slate-400 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 4 OF 4 VERTICALS ONLINE
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Vertical 01 -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">VERTICAL 01</span>
+            <span class="text-xs font-mono text-slate-500">Bangalore Hub Relay</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">South Asian Domestic Botanical Logistics</h3>
+          <p class="text-xs font-mono text-amber-400/90 mb-4">Direct Supply Chain Routing & Wholesale Buying Club Architecture</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            High-authority direct-to-warehouse dispatch protocol in the Indian subcontinent. Bypasses multi-tiered retail markups and adulteration risks by routing consumers directly to central climate-controlled headquarters and fulfillment hubs in Bengaluru.
+          </p>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Domestic INR GST billing & express regional logistics integration</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Frictionless wholesale buying club enrollment (Zero multi-level recruiting stigma)</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Hardware-backed automated inbound mobile routing</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Status: Active Production</span>
+          <span class="text-emerald-400">Autonomous Relay</span>
+        </div>
+      </div>
+
+      <!-- Vertical 02 -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-amber-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono">VERTICAL 02</span>
+            <span class="text-xs font-mono text-slate-500">In-Memory Engine</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Dynamic Edge Attribution & Document Stamping</h3>
+          <p class="text-xs font-mono text-emerald-400/90 mb-4">Zero-Human Offline-Resilient Link Fusion</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Proprietary serverless document compiler modifying PDF binary link annotations and visual text on demand. Guarantees commercial attribution survives cross-device transfers, sandboxed PDF viewers, and forwarded private messaging threads.
+          </p>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Sub-150ms in-memory PDF manipulation using headless JavaScript engines</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Immune to Safari ITP, mobile webview purges, and ad blockers</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Direct URL handoff directly to enterprise cart destinations</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Stack: pdf-lib · Vercel Edge</span>
+          <span class="text-amber-400">Operational Toolchain</span>
+        </div>
+      </div>
+
+      <!-- Vertical 03 -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-cyan-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono">VERTICAL 03</span>
+            <span class="text-xs font-mono text-slate-500">Autonomous Procurement</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Industrial Equipment & Heavy Machinery Lead Relays</h3>
+          <p class="text-xs font-mono text-cyan-400/90 mb-4">Algorithmic Parts Discovery & Supplier Matching</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Headless lead-matching infrastructure capturing high-intent commercial procurement queries. Connects enterprise equipment inquiries directly with regional equipment yards and salvage distribution networks without human middlemen.
+          </p>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Programmatic static index deployment for long-tail industrial search</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Automated buyer RFQ sanitization and vendor relay</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Zero-human transaction verification loops</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-foundry-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-400">Deployment: Multi-Node Edge</span>
+          <span class="text-cyan-400">Autonomous Match</span>
+        </div>
+      </div>
+
+      <!-- Vertical 04 -->
+      <div class="bg-foundry-850 rounded-2xl border border-foundry-700/80 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">VERTICAL 04</span>
+            <span class="text-xs font-mono text-slate-500">Agentic Intelligence</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Agentic Chemical Editorial & Purity Audits</h3>
+          <p class="text-xs font-mono text-emerald-400/90 mb-4">Autonomous GC-MS Spectral Verification & Research Pipelines</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Agentic research desk querying gas chromatography and mass spectrometry databases to expose consumer adulteration, phthalate extensions, and dilution markers. Synthesizes peer-reviewed botanical science into public education without human copywriters.
+          </p>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <svg class="w-4 h-4 text
